@@ -1,0 +1,196 @@
+@import url(./fonts.css);
+
+:root{
+    --Abel: 'Abel', sans-serif;
+    --Anton: 'Anton', sans-serif;
+    --JosefinSans: 'Josefin_Sans', sans-serif;
+    --LexendDeca: 'Lexend_Deca', sans-serif;
+    --Livvic: 'Livvic', sans-serif;
+    --Marvel: 'Marvel', sans-serif;
+
+    --WarmFlame: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+}
+
+
+/*-------------------------Global--------------------------*/
+
+html, body{
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+html{
+    overflow: auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+button.btn{
+    background: var(--WarmFlame);
+    font-family: var(--LexendDeca);
+    font-size: 17px;
+
+    width: 170px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+
+    cursor: pointer;
+}
+button.btn:hover{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+h1{
+    font-family: var(--LexendDeca);
+}
+h3{
+    font-family: var(--Abel);
+}
+/*-------------X-----------Global---------------X----------*/
+
+
+
+
+
+
+/*--------------------------Nav---------------------------*/
+
+.nav{
+    margin: 0px 30px;
+    align-items: center;
+}
+
+.nav, .nav-atalhos, .nav-icones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.nav-logo a{
+    font-family: var(--Marvel);
+    font-size: 30px;
+    color: black;
+}
+.nav-logo a:hover{
+    color:#ff9a9e;
+    transition: 300ms;
+}
+.atalhos-link{
+    padding: 30px 35px;
+
+    font-family: var(--Livvic);
+    font-size: 18px;
+    color: black;
+}
+
+.nav-atalhos div:hover{
+    background: var(--WarmFlame);
+    color: white;
+    cursor: pointer;
+}
+
+.nav-icones i{
+    padding: 0px 5px;
+    color: black;
+}
+.nav-icones i:hover{
+    color: #ff9a9e;
+    transition: 200ms;
+}
+
+/*--------------X-----------Nav----------------X----------*/
+
+
+
+
+
+/*--------------------------Main---------------------------*/
+
+
+/*----------------------Inicio--------------------------*/
+.inicio{
+    background: url(../assets/hd-wallpaper-4436636.jpg);
+    background-size: cover;
+    height: 925px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio-subtitulo{
+    color: white;
+    font-size: 25px;
+    margin: 0px;
+    text-align: center;
+}
+.inicio-titulo{
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+/*-----------X----------Inicio--------------X-----------*/
+
+
+/*--------------X-----------Main---------------X-----------*/
+
+
+
+
+
+/*--------------------------Footer---------------------------*/
+.rodape{
+    background: rgb(22, 22, 22);
+    margin: 0;
+    padding: 20px 0px;
+}
+.rodape .rodape-conteudo{
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 30px;
+}
+
+.rodape-sobre{
+    width: 40%;
+    color: white;
+}
+.rodape-sobre p{
+    color: rgb(150, 150, 150);
+}
+
+.rodape-sigame{
+    width: 40%;
+    color: white;
+    text-align: right;
+}
+.rodape-icones{
+    display: flex;
+    flex-direction: column;
+}
+.rodape-icones a{
+    color: rgb(150, 150, 150);
+    font-family: var(--Livvic);
+    margin: 5px;
+}
+.rodape-icones a:hover{
+    color: rgb(100, 100, 100);
+    transition: 200ms;
+}
+
+.rodape-nota{
+    color: rgb(100, 100, 100);
+
+    text-align: center;
+}
+
+/*--------------X-----------Footer---------------X-----------*/
